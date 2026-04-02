@@ -10,6 +10,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500&display=swap"
         rel="stylesheet">
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 </head>
 
 <body>
@@ -17,7 +20,10 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="logo">Mo Coffee House</div>
-        <ul class="nav-links">
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links" id="navLinks">
             <li><a href="#about">About</a></li>
             <li><a href="#menu">Menu</a></li>
             <li><a href="#gallery">Gallery</a></li>
@@ -764,19 +770,21 @@
 
         <div class="social-links">
 
-            <a href="https://wa.me/201001234567" target="_blank" class="social-card whatsapp">
+            <a href="https://wa.me/201001234567" target="_blank" rel="noopener noreferrer" class="social-card whatsapp">
                 <div class="social-icon"><i class="fa-brands fa-whatsapp"></i></div>
                 <h3>WhatsApp</h3>
                 <p>Chat with us now</p>
             </a>
 
-            <a href="https://facebook.com/MoCoffeeHouse" target="_blank" class="social-card facebook">
+            <a href="https://facebook.com/MoCoffeeHouse" target="_blank" rel="noopener noreferrer"
+                class="social-card facebook">
                 <div class="social-icon"><i class="fa-brands fa-facebook-f"></i></div>
                 <h3>Facebook</h3>
                 <p>Follow our page</p>
             </a>
 
-            <a href="https://instagram.com/MoCoffeeHouse" target="_blank" class="social-card instagram">
+            <a href="https://instagram.com/MoCoffeeHouse" target="_blank" rel="noopener noreferrer"
+                class="social-card instagram">
                 <div class="social-icon"><i class="fa-brands fa-instagram"></i></div>
                 <h3>Instagram</h3>
                 <p>See our daily vibes</p>
@@ -810,6 +818,7 @@
         </div>
     </footer>
     <script src="mo-coffee-house/js/main.js"></script>
+
 </body>
 
 </html>
