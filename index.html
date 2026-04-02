@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mo Coffee House</title>
+    <link rel="stylesheet" href="mo-coffee-house/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">Mo Coffee House</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#location">Location</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Where Every Cup Tells a Story</h1>
+        <p>Handcrafted coffee in a warm, welcoming space</p>
+        <a href="#menu" class="btn">Explore Our Menu</a>
+    </section>
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>Our Story</h2>
+                <p>Mo Coffee House was born from a simple belief: great coffee brings people together. What started as a
+                    small dream in 2020 has grown into a warm corner where friends meet, ideas spark, and every cup is
+                    crafted with care.</p>
+                <p>We source our beans from the finest farms, roast them locally, and serve them with love. Whether
+                    you're here for your morning espresso or a late-night cheesecake, you're family.</p>
+                <div class="about-stats">
+                    <div class="stat">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Years of Serving</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">50K+</span>
+                        <span class="stat-label">Cups Served</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">72</span>
+                        <span class="stat-label">Menu Items</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600"
+                    alt="Coffee being prepared">
+            </div>
+        </div>
+    </section>
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+        <h2>Our Menu</h2>
+        <p class="menu-subtitle">Crafted with love, served with warmth</p>
+
+        <!-- Filter Buttons -->
+        <div class="menu-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="hot-coffee">Hot Coffee</button>
+            <button class="filter-btn" data-filter="iced-coffee">Iced Coffee</button>
+            <button class="filter-btn" data-filter="hot-drinks">Hot Drinks</button>
+            <button class="filter-btn" data-filter="fresh-juices">Juices & Smoothies</button>
+            <button class="filter-btn" data-filter="desserts">Desserts</button>
+            <button class="filter-btn" data-filter="bakery">Bakery</button>
+            <button class="filter-btn" data-filter="sandwiches">Sandwiches</button>
+            <button class="filter-btn" data-filter="breakfast">Breakfast</button>
+        </div>
+
+        <!-- Menu Items Grid -->
+        <div class="menu-items-grid">
+
+            <!-- ========== HOT COFFEE ========== -->
+            <div class="menu-card" data-category="hot-coffee">
+                <div class="menu-card-info">
+                    <h4>Espresso</h4>
+                    <p>Rich and bold single shot</p>
+                </div>
+                <span class="menu-card-price">25 EGP</span>
+            </div>
+
+            <div class="menu-card" data-category="hot-coffee">
+                <div class="menu-card-info">
+                    <h4>Double Espresso</h4>
+                    <p>Extra strong double shot</p>
+                </div>
+                <span class="menu-card-price">35 EGP</span>
+            </div>
+
+            <div class="menu-card" data-category="hot-coffee">
+                <div class="menu-card-info">
+                    <h4>Americano</h4>
+                    <p>Espresso with hot water</p>
+                </div>
+                <span class="menu-card-price">35 EGP</span>
+            </div>
+
+            <div class="menu-card" data-category="hot-coffee">
+                <div class="menu-card-info">
+                    <h4>Cappuccino</h4>
+                    <p>Espresso, steamed milk & foam</p>
+                </div>
+                <span class="menu-card-price">45 EGP</span>
+            </div>
+
+            <div class="menu-card" data-category="hot-coffee">
+                <div class="menu-card-info">
+                    <h4>Latte</h4>
+                    <p>Smooth espresso with steamed milk</p>
+                </div>
+                <span class="menu-card-price">50 EGP</span>
+            </div>
+
+            <div class="menu-card" data-category="hot-coffee">
+                <div class="menu-card-info">
+                    <h4>Caramel Latte</h4>
+                    <p>Latte with caramel syrup & drizzle</p>
+                </div>
+                <span class="menu-card-price">60 EGP</span>
+            </div>
+
+            <div class="menu-card" data-category="hot-coffee">
+                <div class="menu-card-info">
+                    <h4>Vanilla Latte</h4>
+                    <p>Latte with French vanilla</p>
+                </div>
+                <span class="menu-card-price">60 EGP</span>
+            </div>
+
+            <div class="menu-card" data-category="hot-coffee">
+                <div class="menu-card-info">
+                    <h4>Hazelnut Latte</h4>
+                    <p>Latte with hazelnut flavor</p>
+                </div>
+                <span class="menu-card-price">60 EGP</span>
+            </div>
+
+            <div class="menu-card" data-category="hot-coffee">
+                <div class="menu-card-info">
+                    <h4>Mocha</h4>
+                    <p>Espresso, chocolate & steamed milk</p>
+                </div>
+                <span class="menu-card-price">55 EGP</span>
+            </div>
+
+            <div class="menu-card" data-category="hot-coffee">
+                <div class="menu-card-info">
+                    <h4>Spanish Latte</h4>
+                    <p>Espresso with condensed milk</p>
+                </div>
+                <span class="menu-card-price">55 EGP</span>
+            </div>
+
+            <!-- ========== ICED COFFEE ========== -->
+            <div class="menu-card" data-category="iced-coffee">
+                <div class="menu-card-info">
+                    <h4>Iced Americano</h4>
+                    <p>Cold espresso with water & ice</p>
+                </div>
+                <span class="menu-card-price">45 EGP</span>
+            </div>
+
+            <div class="menu-card" data-category="iced-coffee">
+                <div class="menu-card-info">
+                    <h4>Iced Latte</h4>
+                    <p>Espresso with cold milk over ice</p>
+                </div>
+                <span class="menu-card-price">55 EGP</span>
+            </div>
+
+            <div class="menu-card" data-category="iced-coffee">
+                <div class="menu-card-info">
+                    <h4>Iced Caramel Latte</h4>
+                    <p>Caramel, espresso & cold milk</p>
+                </div>
+                <span class="menu-card-price">65 EGP</span>
+            </div>
+
+            <div class="menu-card" data-category="iced-coffee">
+                <div class="menu-card-info">
+                    <h4>Iced Mocha</h4>
+                    <p>Chocolate, espresso & cold milk</p>
+                </div>
+                <span class="menu-card-price">65 EGP</span>
+            </div>
+
+            <div class="menu-card" data-category="iced-coffee">
+                <div class="menu-card-info">
+                    <h4>Cold Brew</h4>
+                    <p>Slow-steeped for 12 hours</p>
+                </div>
+                <span class="menu-card-price">60 EGP</span>
+            </div>
+
+            <div class="menu-card" data-category="iced-coffee">
+                <div class="menu-card-info">
+                    <h4>Iced Spanish Latte</h4>
+                    <p>Iced espresso with condensed milk</p>
+                </div>
+                <span class="menu-card-price">60 EGP</span>
+            </div>
+
+            <div class="menu-card" data-category="iced-coffee">
+                <div class="menu-card-info">
+                    <h4>Frappe</h4>
+                    <p>Blended iced coffee drink</p>
+                </div>
+                <span class="menu-card-price">65 EGP</span>
+            </div>
+
+            <div class="menu-card" data-category="iced-coffee">
+                <div class="menu-card-info">
+                    <h4>Caramel Frappe</h4>
+                    <p>Blended with caramel & whipped cream</p>
+                </div>
+                <span class="menu-card-price">70 EGP</span>
+            </div>
+
+            <div class="menu-card" data-category="iced-coffee">
+                <div class="menu-card-info">
+                    <h4>Oreo Frappe</h4>
+                    <p>Blended with Oreo cookies & cream</p>
+                </div>
+                <span class="menu-card-price">75 EGP</span>
+            </div>
+
+            <div class="menu-card" data-category="iced-coffee">
+                <div class="menu-card-info">
+                    <h4>Matcha Latte</h4>
+                    <p>Japanese matcha with cold milk</p>
+                </div>
+                <span class="menu-card-price">70 EGP</span>
+            </div>
+
+            <!-- ========== HOT DRINKS ========== -->
+            <div class="menu-card" data-category="hot-drinks">
+                <div class="menu-card-info">
+                    <h4>Tea</h4>
+                    <p>Classic black tea</p>
+                </div>
+                <span class="menu-card-price">20 EGP</span>
+            </div>
+
+            <div class="menu-card" data-category="hot-drinks">
+                <div class="menu-card-info">
+                    <h4>Green Tea</h4>
+                    <p>Light and refreshing</p>
+                </div>
+                <span class="menu-card-price">25 EGP</span>
+            </div>
+
+            <div class="menu-card" data-category="hot-drinks">
+                <div class="menu-card-info">
+                    <h4>Chamomile Tea</h4>
+                    <p>Calming herbal tea</p>
+                </div>
+                <span class="menu-card-price">30 EGP</span>
+            </div>
+
+            <div class="menu-card" data-category="hot-drinks">
+                <div class="menu-card-info">
+                    <h4>Hot Chocolate</h4>
+                    <p>Rich Belgian chocolate</p>
+                </div>
+                <span class="menu-card-price">50 EGP</span>
+            </div>
+
+            <div class="menu-card" data-category="hot-drinks">
+                <div class="menu-card-info">
+                    <h4>White Hot Chocolate</h4>
+                    <p>Creamy white chocolate drink</p>
+                </div>
+                <span class="menu-card-price">55 EGP</span>
+            </div>
+
+            <div class="menu-card" data-category="hot-drinks">
+                <div class="menu-card-info">
+                    <h4>Sahlab</h4>
+                    <p>Traditional warm orchid drink</p>
+                </div>
+                <span class="menu-card-price">45 EGP</span>
+            </div>
+
+            <div class="menu-card" data-category="hot-drinks">
+                <div class="menu-card-info">
+                    <h4>Turkish Coffee</h4>
+                    <p>Traditional fine ground coffee</p>
+                </div>
+                <span class="menu-card-price">30 EGP</span>
+            </div>
+
+            <div class="menu-card" data-category="hot-drinks">
+                <div class="menu-card-info">
+                    <h4>French Press</h4>
+                    <p>Full-bodied brewed coffee</p>
+                </div>
+                <span class="menu-card-price">50 EGP</span>
+            </div>
+
+            <!-- ========== FRESH JUICES & SMOOTHIES ========== -->
+            <div class="menu-card" data-category="fresh-juices">
+                <div class="menu-card-info">
+                    <h4>Orange Juice</h4>
+                    <p>Freshly squeezed oranges</p>
+                </div>
+                <span class="menu-card-price">40 EGP</span>
+            </div>
+
+            <div class="menu-card" data-category="fresh-juices">
+                <div class="menu-card-info">
+                    <h4>Lemonade</h4>
+                    <p>Fresh lemon with mint</p>
+                </div>
+                <span class="menu-card-price">35 EGP</span>
+            </div>
+
+            <div class="menu-card" data-category="fresh-juices">
+                <div class="menu-card-info">
+                    <h4>Mango Juice</h4>
+                    <p>Fresh seasonal mango</p>
+                </div>
+                <span class="menu-card-price">45 EGP</span>
+            </div>
+
+            <div class="menu-card" data-category="fresh-juices">
+                <div class="menu-card-info">
+                    <h4>Strawberry Juice</h4>
+                    <p>Fresh blended strawberries</p>
+                </div>
+                <span class="menu-card-price">45 EGP</span>
+            </div>
+
+            <div class="menu-card" data-category="fresh-juices">
+                <div class="menu-card-info">
+                    <h4>Watermelon Juice</h4>
+                    <p>Refreshing summer blend</p>
+                </div>
+                <span class="menu-card-price">40 EGP</span>
+            </div>
+
+            <div class="menu-card" data-category="fresh-juices">
+                <div class="menu-card-info">
+                    <h4>Mixed Berry Smoothie</h4>
+                    <p>Berries, yogurt & honey</p>
+                </div>
+                <span class="menu-card-price">65 EGP</span>
+            </div>
+
+            <div class="menu-card" data-category="fresh-juices">
+                <div class="menu-card-info">
+                    <h4>Mango Smoothie</h4>
+                    <p>Mango, banana & yogurt</p>
+                </div>
+                <span class="menu-card-price">60 EGP</span>
+            </div>
+
+            <div class="menu-card" data-category="fresh-juices">
+                <div class="menu-card-info">
+                    <h4>Banana Smoothie</h4>
+                    <p>Banana, milk & honey</p>
+                </div>
+                <span class="menu-card-price">50 EGP</span>
+            </div>
+
+            <div class="menu-card" data-category="fresh-juices">
+                <div class="menu-card-info">
+                    <h4>Mojito</h4>
+                    <p>Lime, mint & soda — no alcohol</p>
+                </div>
+                <span class="menu-card-price">45 EGP</span>
+            </div>
+
+            <div class="menu-card" data-category="fresh-juices">
+                <div class="menu-card-info">
+                    <h4>Passion Fruit Mojito</h4>
+                    <p>Tropical passion fruit twist</p>
+                </div>
+                <span class="menu-card-price">55 EGP</span>
+            </div>
+
+            <!-- ========== DESSERTS ========== -->
+            <div class="menu-card" data-category="desserts">
+                <div class="menu-card-info">
+                    <h4>New York Cheesecake</h4>
+                    <p>Classic creamy cheesecake</p>
+                </div>
+                <span class="menu-card-price">65 EGP</span>
+            </div>
+
+            <div class="menu-card" data-category="desserts">
+                <div class="menu-card-info">
+                    <h4>Lotus Cheesecake</h4>
+                    <p>Biscoff crust & cream</p>
+                </div>
+                <span class="menu-card-price">70 EGP</span>
+            </div>
+
+            <div class="menu-card" data-category="desserts">
+                <div class="menu-card-info">
+                    <h4>Chocolate Brownie</h4>
+                    <p>Warm fudgy brownie with nuts</p>
+                </div>
+                <span class="menu-card-price">55 EGP</span>
+            </div>
+
+            <div class="menu-card" data-category="desserts">
+                <div class="menu-card-info">
+                    <h4>Brownie Sundae</h4>
+                    <p>Brownie with ice cream & sauce</p>
+                </div>
+                <span class="menu-card-price">80 EGP</span>
+            </div>
+
+            <div class="menu-card" data-category="desserts">
+                <div class="menu-card-info">
+                    <h4>Tiramisu</h4>
+                    <p>Italian coffee-soaked layers</p>
+                </div>
+                <span class="menu-card-price">75 EGP</span>
+            </div>
+
+            <div class="menu-card" data-category="desserts">
+                <div class="menu-card-info">
+                    <h4>Crème Brûlée</h4>
+                    <p>Vanilla custard with caramel top</p>
+                </div>
+                <span class="menu-card-price">70 EGP</span>
+            </div>
+
+            <div class="menu-card" data-category="desserts">
+                <div class="menu-card-info">
+                    <h4>Waffle</h4>
+                    <p>Belgian waffle with toppings</p>
+                </div>
+                <span class="menu-card-price">65 EGP</span>
+            </div>
+
+            <div class="menu-card" data-category="desserts">
+                <div class="menu-card-info">
+                    <h4>Nutella Waffle</h4>
+                    <p>Waffle loaded with Nutella & banana</p>
+                </div>
+                <span class="menu-card-price">75 EGP</span>
+            </div>
+
+            <div class="menu-card" data-category="desserts">
+                <div class="menu-card-info">
+                    <h4>Pancakes</h4>
+                    <p>Fluffy stack with maple syrup</p>
+                </div>
+                <span class="menu-card-price">60 EGP</span>
+            </div>
+
+            <div class="menu-card" data-category="desserts">
+                <div class="menu-card-info">
+                    <h4>Molten Chocolate Cake</h4>
+                    <p>Warm cake with flowing chocolate center</p>
+                </div>
+                <span class="menu-card-price">80 EGP</span>
+            </div>
+
+            <!-- ========== BAKERY ========== -->
+            <div class="menu-card" data-category="bakery">
+                <div class="menu-card-info">
+                    <h4>Butter Croissant</h4>
+                    <p>Freshly baked French croissant</p>
+                </div>
+                <span class="menu-card-price">35 EGP</span>
+            </div>
+
+            <div class="menu-card" data-category="bakery">
+                <div class="menu-card-info">
+                    <h4>Chocolate Croissant</h4>
+                    <p>Pain au chocolat</p>
+                </div>
+                <span class="menu-card-price">40 EGP</span>
+            </div>
+
+            <div class="menu-card" data-category="bakery">
+                <div class="menu-card-info">
+                    <h4>Zaatar Croissant</h4>
+                    <p>Croissant with zaatar & cheese</p>
+                </div>
+                <span class="menu-card-price">40 EGP</span>
+            </div>
+
+            <div class="menu-card" data-category="bakery">
+                <div class="menu-card-info">
+                    <h4>Cinnamon Roll</h4>
+                    <p>Warm roll with cream cheese glaze</p>
+                </div>
+                <span class="menu-card-price">45 EGP</span>
+            </div>
+
+            <div class="menu-card" data-category="bakery">
+                <div class="menu-card-info">
+                    <h4>Banana Bread</h4>
+                    <p>Homemade moist banana bread</p>
+                </div>
+                <span class="menu-card-price">35 EGP</span>
+            </div>
+
+            <div class="menu-card" data-category="bakery">
+                <div class="menu-card-info">
+                    <h4>Blueberry Muffin</h4>
+                    <p>Freshly baked with real berries</p>
+                </div>
+                <span class="menu-card-price">40 EGP</span>
+            </div>
+
+            <div class="menu-card" data-category="bakery">
+                <div class="menu-card-info">
+                    <h4>Chocolate Chip Cookie</h4>
+                    <p>Soft & chewy giant cookie</p>
+                </div>
+                <span class="menu-card-price">30 EGP</span>
+            </div>
+
+            <div class="menu-card" data-category="bakery">
+                <div class="menu-card-info">
+                    <h4>Scone</h4>
+                    <p>Classic scone with clotted cream</p>
+                </div>
+                <span class="menu-card-price">40 EGP</span>
+            </div>
+
+            <!-- ========== SANDWICHES ========== -->
+            <div class="menu-card" data-category="sandwiches">
+                <div class="menu-card-info">
+                    <h4>Club Sandwich</h4>
+                    <p>Chicken, bacon, lettuce & mayo</p>
+                </div>
+                <span class="menu-card-price">85 EGP</span>
+            </div>
+
+            <div class="menu-card" data-category="sandwiches">
+                <div class="menu-card-info">
+                    <h4>Grilled Chicken Wrap</h4>
+                    <p>Chicken, veggies & ranch sauce</p>
+                </div>
+                <span class="menu-card-price">80 EGP</span>
+            </div>
+
+            <div class="menu-card" data-category="sandwiches">
+                <div class="menu-card-info">
+                    <h4>Tuna Sandwich</h4>
+                    <p>Tuna salad on toasted bread</p>
+                </div>
+                <span class="menu-card-price">70 EGP</span>
+            </div>
+
+            <div class="menu-card" data-category="sandwiches">
+                <div class="menu-card-info">
+                    <h4>Avocado Toast</h4>
+                    <p>Smashed avocado on sourdough</p>
+                </div>
+                <span class="menu-card-price">75 EGP</span>
+            </div>
+
+            <div class="menu-card" data-category="sandwiches">
+                <div class="menu-card-info">
+                    <h4>Halloumi Wrap</h4>
+                    <p>Grilled halloumi with veggies</p>
+                </div>
+                <span class="menu-card-price">80 EGP</span>
+            </div>
+
+            <div class="menu-card" data-category="sandwiches">
+                <div class="menu-card-info">
+                    <h4>Smoked Turkey Panini</h4>
+                    <p>Turkey, cheese & mustard pressed</p>
+                </div>
+                <span class="menu-card-price">85 EGP</span>
+            </div>
+
+            <div class="menu-card" data-category="sandwiches">
+                <div class="menu-card-info">
+                    <h4>Beef Burger</h4>
+                    <p>Angus beef with cheddar & fries</p>
+                </div>
+                <span class="menu-card-price">110 EGP</span>
+            </div>
+
+            <div class="menu-card" data-category="sandwiches">
+                <div class="menu-card-info">
+                    <h4>Chicken Caesar Wrap</h4>
+                    <p>Chicken, romaine & caesar dressing</p>
+                </div>
+                <span class="menu-card-price">80 EGP</span>
+            </div>
+
+            <!-- ========== BREAKFAST ========== -->
+            <div class="menu-card" data-category="breakfast">
+                <div class="menu-card-info">
+                    <h4>Mo's Breakfast</h4>
+                    <p>Eggs, toast, cheese, jam & coffee</p>
+                </div>
+                <span class="menu-card-price">95 EGP</span>
+            </div>
+
+            <div class="menu-card" data-category="breakfast">
+                <div class="menu-card-info">
+                    <h4>English Breakfast</h4>
+                    <p>Eggs, beans, sausage, toast & tea</p>
+                </div>
+                <span class="menu-card-price">120 EGP</span>
+            </div>
+
+            <div class="menu-card" data-category="breakfast">
+                <div class="menu-card-info">
+                    <h4>Eggs Benedict</h4>
+                    <p>Poached eggs & hollandaise on muffin</p>
+                </div>
+                <span class="menu-card-price">90 EGP</span>
+            </div>
+
+            <div class="menu-card" data-category="breakfast">
+                <div class="menu-card-info">
+                    <h4>Omelette</h4>
+                    <p>3 eggs with cheese, peppers & mushroom</p>
+                </div>
+                <span class="menu-card-price">70 EGP</span>
+            </div>
+
+            <div class="menu-card" data-category="breakfast">
+                <div class="menu-card-info">
+                    <h4>Shakshuka</h4>
+                    <p>Eggs in spicy tomato sauce</p>
+                </div>
+                <span class="menu-card-price">65 EGP</span>
+            </div>
+
+            <div class="menu-card" data-category="breakfast">
+                <div class="menu-card-info">
+                    <h4>French Toast</h4>
+                    <p>Brioche with berries & maple</p>
+                </div>
+                <span class="menu-card-price">60 EGP</span>
+            </div>
+
+            <div class="menu-card" data-category="breakfast">
+                <div class="menu-card-info">
+                    <h4>Açaí Bowl</h4>
+                    <p>Açaí, granola, banana & berries</p>
+                </div>
+                <span class="menu-card-price">80 EGP</span>
+            </div>
+
+            <div class="menu-card" data-category="breakfast">
+                <div class="menu-card-info">
+                    <h4>Granola Bowl</h4>
+                    <p>Yogurt, granola, honey & fruits</p>
+                </div>
+                <span class="menu-card-price">65 EGP</span>
+            </div>
+
+        </div>
+    </section>
+    <!-- Gallery Section -->
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <h2>Our Space</h2>
+        <p class="gallery-subtitle">A glimpse into Mo Coffee House</p>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800" alt="Coffee shop interior">
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=400" alt="Latte art">
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400" alt="Pastries display">
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?w=800" alt="Cozy seating">
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400" alt="Barista at work">
+            </div>
+        </div>
+    </section>
+    <!-- Reviews Section -->
+    <section class="reviews" id="reviews">
+        <h2>What People Say</h2>
+        <p class="reviews-subtitle">Loved by our community</p>
+        <div class="reviews-grid">
+            <div class="review-card">
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">"Best coffee in town! The Spanish Latte is absolutely incredible. The atmosphere
+                    is warm and welcoming — I come here every morning."</p>
+                <div class="review-author">
+                    <strong>Ahmed Hassan</strong>
+                    <span>Regular since 2021</span>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">"The breakfast menu is amazing. Mo's Breakfast with a cappuccino is the perfect
+                    start to my day. Staff is super friendly!"</p>
+                <div class="review-author">
+                    <strong>Sarah Mohamed</strong>
+                    <span>Regular since 2022</span>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">"I held my book club meetings here for a year. The space is cozy, the cheesecake
+                    is to die for, and the WiFi never lets you down."</p>
+                <div class="review-author">
+                    <strong>Youssef Ali</strong>
+                    <span>Regular since 2020</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Location Section -->
+    <section class="location" id="location">
+        <h2>Find Us</h2>
+        <p class="location-subtitle">We'd love to see you</p>
+        <div class="location-content">
+            <div class="location-info">
+                <div class="info-item">
+                    <h3>Address</h3>
+                    <p>15 El-Tahrir Street, Downtown Cairo</p>
+                </div>
+                <div class="info-item">
+                    <h3>Hours</h3>
+                    <p>Saturday – Thursday: 8 AM – 11 PM</p>
+                    <p>Friday: 2 PM – 11 PM</p>
+                </div>
+                <div class="info-item">
+                    <h3>Phone</h3>
+                    <p>+20 100 123 4567</p>
+                </div>
+            </div>
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.7!2d31.2357!3d30.0444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDAyJzM5LjgiTiAzMcKwMTQnMDguNSJF!5e0!3m2!1sen!2seg!4v1600000000000"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Get in Touch</h2>
+        <p class="contact-subtitle">Reach us directly</p>
+
+        <div class="social-links">
+
+            <a href="https://wa.me/201001234567" target="_blank" class="social-card whatsapp">
+                <div class="social-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                <h3>WhatsApp</h3>
+                <p>Chat with us now</p>
+            </a>
+
+            <a href="https://facebook.com/MoCoffeeHouse" target="_blank" class="social-card facebook">
+                <div class="social-icon"><i class="fa-brands fa-facebook-f"></i></div>
+                <h3>Facebook</h3>
+                <p>Follow our page</p>
+            </a>
+
+            <a href="https://instagram.com/MoCoffeeHouse" target="_blank" class="social-card instagram">
+                <div class="social-icon"><i class="fa-brands fa-instagram"></i></div>
+                <h3>Instagram</h3>
+                <p>See our daily vibes</p>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>Mo Coffee House</h3>
+                <p>Where Every Cup Tells a Story</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="#about">About</a>
+                <a href="#menu">Menu</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-hours">
+                <h4>Opening Hours</h4>
+                <p>Sat – Thu: 8 AM – 11 PM</p>
+                <p>Friday: 2 PM – 11 PM</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Mo Coffee House. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="mo-coffee-house/js/main.js"></script>
+</body>
+
+</html>
